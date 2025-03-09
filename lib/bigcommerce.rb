@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 require 'hashie'
-require 'faraday_middleware'
+require 'faraday'
+require 'faraday/gzip'
 require_relative 'bigcommerce/version'
 require_relative 'bigcommerce/config'
 require_relative 'bigcommerce/connection'
@@ -12,7 +13,7 @@ require_relative 'bigcommerce/resources/resource'
 
 module Bigcommerce
   resources = File.join(File.dirname(__FILE__), 'bigcommerce', 'resources', '**', '*.rb')
-  Dir.glob(resources).sort.each { |r| require r }
+  Dir.glob(resources).each { |r| require r }
 
   class << self
     # @!attribute [r] api
