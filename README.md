@@ -1,30 +1,24 @@
 # BigCommerce API Ruby
 
 [![Gem Version](https://badge.fury.io/rb/bigcommerce.svg)](https://rubygems.org/gems/bigcommerce)
-[![CircleCI](https://circleci.com/gh/bigcommerce/bigcommerce-api-ruby/tree/master.svg?style=svg)](https://circleci.com/gh/bigcommerce/bigcommerce-api-ruby/tree/master)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/d1ba1b74a2a74a26e8b4/test_coverage)](https://codeclimate.com/github/bigcommerce/bigcommerce-api-ruby/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/d1ba1b74a2a74a26e8b4/maintainability)](https://codeclimate.com/github/bigcommerce/bigcommerce-api-ruby/maintainability)
 
-This is the official BigCommerce API client to support our Stores API. You can find more information about becoming a 
+[![CI](https://github.com/saragabrielinc/bigcommerce-api-ruby/actions/workflows/main.yml/badge.svg)](https://github.com/saragabrielinc/bigcommerce-api-ruby/actions/workflows/main.yml)
+
+This is a fork of the official BigCommerce API client, since the original project is no longer maintained.
 BigCommerce developer here: [developer.bigcommerce.com](http://developer.bigcommerce.com).
 
 
 ## Installation
-BigCommerce is available on [RubyGems](https://rubygems.org/gems/bigcommerce).
 
-```sh
-gem install bigcommerce
-```
-
-You can also add it to your Gemfile.
+You can add it to your Gemfile.
 
 ```rb
-gem 'bigcommerce', '~> 1.0'
+gem 'bigcommerce', '~> 1.0', github: 'saragabrielinc/bigcommerce-api-ruby'
 ```
 
 ## Requirements
 
-- Ruby 2.7.5 or newer (Ruby 3.0+ is preferred)
+- Ruby 3.3 or newer
 
 ## Getting Started
 To make requests to our API, you must register as a developer and have your credentials ready.
